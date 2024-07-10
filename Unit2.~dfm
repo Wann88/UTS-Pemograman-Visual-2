@@ -1,0 +1,27 @@
+object DataModule2: TDataModule2
+  OldCreateOrder = False
+  Left = 192
+  Top = 133
+  Height = 243
+  Width = 401
+  object db: TZConnection
+    ControlsCodePage = cGET_ACP
+    AutoEncodeStrings = False
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'penjualan'
+    User = 'root'
+    Protocol = 'mysql'
+    Left = 48
+    Top = 32
+  end
+  object tb_satuan: TZQuery
+    Params = <>
+    Left = 136
+    Top = 32
+  end
+  object ds_satuan: TDataSource
+    Left = 144
+    Top = 120
+  end
+end
